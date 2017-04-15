@@ -9,10 +9,15 @@
 /* Begin PBXBuildFile section */
 		D1D1429E1EA23D1400D4ECA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D1429D1EA23D1400D4ECA6 /* AppDelegate.swift */; };
 		D1D142A01EA23D1400D4ECA6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D1429F1EA23D1400D4ECA6 /* ViewController.swift */; };
-		D1D142A31EA23D1400D4ECA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1D142A11EA23D1400D4ECA6 /* Main.storyboard */; };
 		D1D142A51EA23D1400D4ECA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1D142A41EA23D1400D4ECA6 /* Assets.xcassets */; };
 		D1D142A81EA23D1400D4ECA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1D142A61EA23D1400D4ECA6 /* LaunchScreen.storyboard */; };
 		D1D142B31EA23D1400D4ECA6 /* ReduxCounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D142B21EA23D1400D4ECA6 /* ReduxCounterTests.swift */; };
+		D1D142BE1EA23E1000D4ECA6 /* CounterViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D142BD1EA23E1000D4ECA6 /* CounterViewCell.swift */; };
+		D1D142C01EA23E2100D4ECA6 /* CounterViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1D142BF1EA23E2100D4ECA6 /* CounterViewCell.xib */; };
+		D1D142C21EA24ABB00D4ECA6 /* Redux.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D142C11EA24ABB00D4ECA6 /* Redux.swift */; };
+		D1D142C41EA24CB500D4ECA6 /* CounterReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D142C31EA24CB500D4ECA6 /* CounterReducer.swift */; };
+		D1D142C71EA2555B00D4ECA6 /* AddCounterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D142C51EA2555B00D4ECA6 /* AddCounterCell.swift */; };
+		D1D142C81EA2555B00D4ECA6 /* AddCounterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1D142C61EA2555B00D4ECA6 /* AddCounterCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +34,18 @@
 		D1D1429A1EA23D1400D4ECA6 /* ReduxCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReduxCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1D1429D1EA23D1400D4ECA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1D1429F1EA23D1400D4ECA6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D1D142A21EA23D1400D4ECA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D1D142A41EA23D1400D4ECA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D1D142A71EA23D1400D4ECA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D1D142A91EA23D1400D4ECA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D1D142AE1EA23D1400D4ECA6 /* ReduxCounterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReduxCounterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1D142B21EA23D1400D4ECA6 /* ReduxCounterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduxCounterTests.swift; sourceTree = "<group>"; };
 		D1D142B41EA23D1400D4ECA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1D142BD1EA23E1000D4ECA6 /* CounterViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterViewCell.swift; sourceTree = "<group>"; };
+		D1D142BF1EA23E2100D4ECA6 /* CounterViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CounterViewCell.xib; sourceTree = "<group>"; };
+		D1D142C11EA24ABB00D4ECA6 /* Redux.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Redux.swift; sourceTree = "<group>"; };
+		D1D142C31EA24CB500D4ECA6 /* CounterReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterReducer.swift; sourceTree = "<group>"; };
+		D1D142C51EA2555B00D4ECA6 /* AddCounterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCounterCell.swift; sourceTree = "<group>"; };
+		D1D142C61EA2555B00D4ECA6 /* AddCounterCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddCounterCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,10 +89,12 @@
 			children = (
 				D1D1429D1EA23D1400D4ECA6 /* AppDelegate.swift */,
 				D1D1429F1EA23D1400D4ECA6 /* ViewController.swift */,
-				D1D142A11EA23D1400D4ECA6 /* Main.storyboard */,
 				D1D142A41EA23D1400D4ECA6 /* Assets.xcassets */,
 				D1D142A61EA23D1400D4ECA6 /* LaunchScreen.storyboard */,
 				D1D142A91EA23D1400D4ECA6 /* Info.plist */,
+				D1D142C91EA255B000D4ECA6 /* Cells */,
+				D1D142C11EA24ABB00D4ECA6 /* Redux.swift */,
+				D1D142C31EA24CB500D4ECA6 /* CounterReducer.swift */,
 			);
 			path = ReduxCounter;
 			sourceTree = "<group>";
@@ -94,6 +106,17 @@
 				D1D142B41EA23D1400D4ECA6 /* Info.plist */,
 			);
 			path = ReduxCounterTests;
+			sourceTree = "<group>";
+		};
+		D1D142C91EA255B000D4ECA6 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D1D142BD1EA23E1000D4ECA6 /* CounterViewCell.swift */,
+				D1D142BF1EA23E2100D4ECA6 /* CounterViewCell.xib */,
+				D1D142C51EA2555B00D4ECA6 /* AddCounterCell.swift */,
+				D1D142C61EA2555B00D4ECA6 /* AddCounterCell.xib */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,9 +202,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1D142C81EA2555B00D4ECA6 /* AddCounterCell.xib in Resources */,
 				D1D142A81EA23D1400D4ECA6 /* LaunchScreen.storyboard in Resources */,
 				D1D142A51EA23D1400D4ECA6 /* Assets.xcassets in Resources */,
-				D1D142A31EA23D1400D4ECA6 /* Main.storyboard in Resources */,
+				D1D142C01EA23E2100D4ECA6 /* CounterViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,8 +223,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1D142C71EA2555B00D4ECA6 /* AddCounterCell.swift in Sources */,
 				D1D142A01EA23D1400D4ECA6 /* ViewController.swift in Sources */,
+				D1D142C41EA24CB500D4ECA6 /* CounterReducer.swift in Sources */,
 				D1D1429E1EA23D1400D4ECA6 /* AppDelegate.swift in Sources */,
+				D1D142C21EA24ABB00D4ECA6 /* Redux.swift in Sources */,
+				D1D142BE1EA23E1000D4ECA6 /* CounterViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,14 +251,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D1D142A11EA23D1400D4ECA6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D1D142A21EA23D1400D4ECA6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D1D142A61EA23D1400D4ECA6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

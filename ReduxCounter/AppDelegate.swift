@@ -11,11 +11,22 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    var window: UIWindow?
-
+    var window: UIWindow? = UIWindow(frame: UIScreen.main.bounds)
+    var store: Store?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+
+        let initialState = AppState(counters: [], nextCounterId: 0, totalCount: 0)
+        store = Store(state: initialState, reducer: AppReducer())
+
+        let viewModel = ViewModel(counters: store!.getState().counters)
+        let controller = ViewController(viewModel: viewModel)
+        controller.store = store
+        
+        window?.rootViewController = UINavigationController(rootViewController: controller)
+        window?.makeKeyAndVisible()
+
+
         return true
     }
 
